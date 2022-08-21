@@ -26,7 +26,13 @@ function halfPt(sent){
   return sent.charAt(half-1);
 }
 
+function finalReverse(cipher){
+  return cipher.split("").reverse().join("");
+}
+
 let ciphFirstLast = capitalize(sentence);
 let cipherSentence = adder(sentence,reverseCiph(ciphFirstLast));
 cipherSentence= halfPt(sentence)+cipherSentence;
 window.alert("Your ciphered sentence is: " + cipherSentence);
+const finReverse = finalReverse(cipherSentence);
+window.alert("Your final cipher is: " + finReverse);
