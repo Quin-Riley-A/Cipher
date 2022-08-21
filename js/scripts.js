@@ -5,7 +5,7 @@ const sentence = window.prompt("Please provide a sentence to be ciphered");
 
 window.alert("your sentence was " + sentence + ".");
 
-window.alert(parseInt())
+window.alert(typeof parseInt(sentence.length))
 
 // Business logic
 function capitalize(sentence, size) {
