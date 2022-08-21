@@ -1,20 +1,31 @@
 
 // UI logic
+//First Task
 const sentence = window.prompt("Please provide a sentence to be ciphered");
 
 window.alert("your sentence was " + sentence + ".");
 
+window.alert(parseInt())
+
 // Business logic
-function capitalize(sentence) {
-  let firstlast = sentence.charAt(0) + sentence.charAt(-1);
-  return firstlast.toUpper();
+function capitalize(sentence, size) {
+  const firstlast = sentence.slice(0,1) + sentence.slice(-1);
+  return firstlast.toUpperCase();
+}
+
+function reverse(ciphFirstLast){
+  const ciphFirst = ciphFirstLast.slice(-1);
+  const ciphLast = ciphFirstLast.slice(0,1);
+  return ciphFirst+ciphLast;
+}
+
+function adder(sent, ciphFirstLast){
+  return sent + ciphFirstLast;
+}
+
+function halfPt(){
+
 }
 
 let ciphFirstLast = capitalize(sentence);
-
-function reverse(ciphFirstLast){
-
-}
-
-
-
+adder(sentence,reverse(ciphFirstLast));
